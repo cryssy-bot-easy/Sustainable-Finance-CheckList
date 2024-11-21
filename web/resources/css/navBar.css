@@ -1,0 +1,513 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Jun-2020, 17:06:31
+    Author     : Danica
+*/
+
+/*@import url("../css/fontawesome-all.css");*/
+html {
+    overflow-x: hidden;
+}
+
+@-ms-viewport {
+    max-width: 1920px !important;
+}
+
+
+.dropbtn {
+    margin-top: 0.7vw !important;
+    margin-left: 91vw;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.dropbtn:active {
+    outline: none !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9999;
+}
+
+.dropdown-content {
+    margin-top: 1.4vw;
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 11vw;
+    border: 0.6px solid rgba(159, 169, 163, 0.5);
+    border-radius: 0.3vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.dropdown-content:after {
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    top: -1.5vw;
+    left: 8.5vw;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    font-size: 1.2vw;
+    color: gray;
+    padding: 7px 12px;
+    outline: none;
+    text-decoration: none !important;
+    display: block;
+}
+
+.cont:hover {
+    color: #333333;
+    background-color: rgba(192, 222, 217, 0.2);
+    outline: none;
+    text-decoration: none !important;
+}
+
+.showuseFunc {
+    display: block;
+    right: 0;
+}
+
+
+.badge {
+    width: 1.2vw;
+    height: 1.2vw;
+    padding: 0.2vw !important;
+    border-radius: 1vw !important;
+    margin-top: -0.4vw !important;
+    margin-left: 0.3vw !important;
+    display: inline-block;
+    position: absolute;
+}
+
+
+/*----------------sidebar-wrapper----------------*/
+
+.sidebar-wrapper {
+    width: 17.75vw;
+    height: 100%;
+    max-height: 100%;
+    position: fixed;
+    padding-top: 4vw;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.sidebar-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-wrapper a {
+    text-decoration: none;
+}
+
+
+
+/*----------------------sidebar-menu-------------------------*/
+
+.sidebar-wrapper .sidebar-menu {
+    margin-top: 1.5vw;
+    font-size: 1.1vw;
+}
+
+.sidebar-wrapper .sidebar-menu ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown>a:after {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f107";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: 0 0;
+    position: absolute;
+    right: 6px;
+    top: 14px;
+}
+.cfeqsidebar-dropdown>a:after {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    background: 0 0;
+    position: absolute;
+    right: 6px;
+    top: 14px;
+}
+.rates:after,
+.user:after,
+.report:after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: none !important;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li {
+    font-size: 1vw;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+    display: none;
+}
+
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active>a:after {
+    transform: rotate(180deg);
+}
+
+
+/*--------------------------page-content-----------------------------*/
+
+.page-wrapper .page-content {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(230, 230, 230, 0.6);
+    z-index: 0;
+}
+
+.page-content {
+    padding: 5.5vw 22vw;
+    padding-right: 3vw;
+}
+
+.page-wrapper .page-content {
+    overflow-x: hidden;
+}
+.page-content.flipc {
+    padding-left: 8vw;
+}
+
+
+/*------scroll bar---------------------*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #525965;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #525965;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+    background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+/*-----------------------------chiller-theme-------------------------------------------------*/
+
+.chiller-theme .sidebar-wrapper {
+    background-image: linear-gradient( to right, rgba(23, 37, 42, 0.9), rgba(23, 37, 42, 0.9)), url("../images/bg.jpg");
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li a {
+    color: white;
+    padding-left: .68vw;
+}
+
+.cfi:hover {
+    color: rgba(80, 175, 150,1) !important;
+    border-left: 4px solid rgba(80, 175, 150,1);
+}
+
+.program:hover {
+    color: rgba(67, 132, 150, 1) !important;
+    border-left: 4px solid rgba(67, 132, 150, 1);
+}
+
+.investment:hover {
+    color: rgba(76, 116, 80, 1) !important;
+    border-left: 4px solid rgba(76, 116, 80, 1);
+}
+
+.payment:hover {
+    color: rgba(205, 163, 79, 1) !important;
+    border-left: 4px solid rgba(205, 163, 79, 1);
+}
+
+.rates:hover {
+    color: rgba(43, 122, 112, 1) !important;
+    border-left: 4px solid rgba(43, 122, 112, 1);
+}
+
+.report:hover {
+    color: #59917f !important;
+    border-left: 4px solid #59917f;
+}
+
+.others:hover {
+    color: rgba(171, 152, 122, 1) !important;
+    border-left: 4px solid rgba(171, 152, 122, 1);
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown ul li a {
+    list-style-type: none;
+    padding-left: 4vw;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .subcfi ul li a:hover {
+    color: rgb(80, 175, 150);
+    border-left: 5px solid rgb(80, 175, 150);
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .subprog ul li a:hover {
+    color: #438496;
+    border-left: 5px solid #438496;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .subinv ul li a:hover {
+    color: #4c7450;
+    border-left: 5px solid #4c7450;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .subpay ul li a:hover {
+    color: #cda34f;
+    border-left: 5px solid #cda34f;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .subrep ul li a:hover {
+    color: #59917f;
+    border-left: 5px solid #59917f;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-dropdown .suboth ul li a:hover {
+    color: #ab987a;
+    border-left: 5px solid #ab987a;
+}
+
+.cfi:hover>i {
+    color: rgba(80, 175, 150, 1) !important;
+}
+
+.program:hover>i {
+    color: rgba(67, 132, 150, 1) !important;
+}
+
+.investment:hover>i {
+    color: rgba(76, 116, 80) !important;
+}
+
+.payment:hover>i {
+    color: rgba(205, 163, 79) !important;
+}
+
+.rates:hover>i {
+    color: rgba(43, 122, 112) !important;
+}
+
+.report:hover>i {
+    color: #59917f !important;
+}
+
+.others:hover>i {
+    color: rgba(171, 152, 122, 1) !important;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu .header-menu span {
+    color: rgb(205, 232, 230);
+}
+
+#logo,
+#logo2,
+#logo3,
+#logo4,
+#logo5,
+#logo6,
+#logo7 {
+    width: 1.3vw;
+    margin-right: 1.3vw;
+    margin-left: 8%;
+    filter: invert(100%);
+}
+
+.fa-user-cog,
+[class^="icon-"],
+[class*=" icon-"] {
+    transition: none !important;
+    margin-left: 8.1%;
+    margin-right: 1.39vw;
+    color: white;
+}
+
+.page-wrapper.toggled .sidebar-wrapper {
+    left: 0px;
+}
+
+.sidebar-wrapper.fliph {
+    width: 3.9vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.sidebar-wrapper:hover.fliph {
+    color: yellow !important;
+}
+
+.sidebar-wrapper.fliph .sidebar-menu .sidebar-dropdown>a:after {
+    display: none;
+}
+
+
+.selected1 {
+    color: white;
+    background: rgb(80, 175, 150);
+}
+
+.selected2 {
+    color: white;
+    background: #438496;
+}
+
+.selected3 {
+    color: white;
+    background: #4c7450;
+}
+
+
+.selected4 {
+    color: white;
+    background: #cda34f;
+}
+
+.selected5 {
+    color: white;
+    background: #2b7a70;
+}
+
+.selected6 {
+    color: white;
+    background: #59917f;
+}
+
+
+.selected7 {
+    color: white;
+    background: #ab987a;
+}
+
+.selected1:hover,
+.selectedstat1:hover {
+    color: rgb(80, 175, 150) !important;
+    border-left: 5px solid rgb(80, 175, 150) !important;
+    background: none;
+}
+
+.selected2:hover,
+.selectedstat2:hover {
+    color: #438496 !important;
+    border-left: 5px solid #438496 !important;
+    background: none;
+}
+
+.selected3:hover,
+.selectedstat3:hover {
+    color: #4c7450 !important;
+    border-left: 5px solid #4c7450 !important;
+    background: none;
+}
+
+.selected4:hover,
+.selectedstat4:hover {
+    color: #cda34f !important;
+    border-left: 5px solid #cda34f !important;
+    background: none;
+}
+
+.selected5:hover {
+    color: #2b7a70 !important;
+    border-left: 5px solid #2b7a70 !important;
+    background: none;
+}
+
+.selected6:hover,
+.selectedstat6:hover {
+    color: #59917f !important;
+    border-left: 5px solid #59917f !important;
+    background: none;
+}
+
+.selected7:hover,
+.selectedstat7:hover {
+    color: #ab987a !important;
+    border-left: 5px solid #ab987a !important;
+    background: none;
+}
+
+.footer {
+    color: gray;
+    font-size: 1vw;
+    clear: both;
+    position: relative;
+    height: 25px;
+    margin-left: 40%;
+    bottom: 0;
+}
+
+.coldel {
+    text-align: center;
+    vertical-align: middle;
+}

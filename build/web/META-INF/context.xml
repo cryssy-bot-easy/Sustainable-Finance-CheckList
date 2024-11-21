@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/SFC" reloadable="false">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="-1" maxIdle="100" maxTotal="1000" name="jdbc/sfc" password="sfc_admin" type="javax.sql.DataSource" url="jdbc:mysql://192.168.17.174:3306/sfc" username="sfc_admin"/>
+</Context>

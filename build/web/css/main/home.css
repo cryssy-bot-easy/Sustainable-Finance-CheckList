@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 20, 2024, 4:54:43 PM
+    Author     : N680
+*/
+
+#homePageGreetingContainer {
+    margin: 22px 10px 0 0;
+    color: #fff;
+    min-width: 983px;
+}
+
+#homePageGreetingContainer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#homePageGreetingContainer .lastLogin {
+    font-weight: bold;
+}
+
+#homePageGreetingContainer .contents {
+    background-color: #666666;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1rem;
+    min-height: 300px;
+}
+
+#homePageGreetingContainer h6 {
+    cursor: pointer;
+}
+
+#homePageGreetingContainer h1 {
+    margin-bottom: 100px;
+}

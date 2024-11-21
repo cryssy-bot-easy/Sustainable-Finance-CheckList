@@ -1,0 +1,199 @@
+
+#lbp-wrap {
+    color: rgb(251, 251, 251);
+    background-image: linear-gradient( to right, rgba(23, 37, 42, 0.9), rgba(23, 37, 42, 0.9)), url("../images/bg.jpg");
+    height: 4.5vw;
+    z-index: 999999;
+    opacity: 0.985;
+    box-shadow: 1px 0px 0.5rem rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.header {
+    color: rgba(251, 251, 251, 0.9);
+    position: absolute;
+    margin-left: 8.5vw;
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+}
+
+.subtitle {
+    color: rgba(251, 251, 251, 0.9);
+    position: absolute;
+    margin-left: 8.5vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+.lbplogo {
+    width: 4vw;
+    margin-top: .5vw;
+    margin-left: 4vw;
+    opacity: 0.9;
+    position: absolute;
+}
+.fa-spinner:before {
+    content: "\f110";
+}
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear;
+    font-size: 18px;
+    opacity: 0;
+    margin-left: -18px;
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.fa-bars {
+    margin-left: 1.3vw;
+    margin-top: 1.5vw;
+    position: absolute;
+    font-size: 1.8vw;
+    z-index: 99999;
+}
+
+.fa-bars:hover {
+    color: rgb(32, 158, 145);
+}
+
+.fa-user-circle {
+    color: rgba(251, 251, 251, 1);
+    font-size: 3vw;
+}
+
+.fa-power-off,
+.fa-user {
+    color: gray;
+    display: inline-block;
+    margin-right: 0.8vw;
+}
+#clock {
+    color: white;
+    font-size: 1.1vw;
+    display: inline-block;
+    margin-top: 1.5vw;
+    margin-left: 70vw;
+    position: absolute;
+}
+.fa {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; }
+.fa-caret-right:before {
+    content: "\f0da"; }
+.fa-bars:before {
+    content: "\f0c9"; }
+.fa-user-circle:before {
+    content: "\f2bd"; }
+.fa-user:before {
+    content: "\f007"; }
+.fa-power-off:before {
+    content: "\f011"; }
+.fa-search:before {
+    content: "\f002"; }
+.fa-filter:before {
+    content: "\f0b0"; }
+.fa-user-cog:before {
+    content: "\f4fe"; }
+.fa-exclamation-circle:before {
+    content: "\f06a"; }
+.fa-check:before {
+    content: "\f00c"; }
+.fa-plus:before {
+    content: "\f067"; }
+.fa-trash:before {
+    content: "\f1f8"; }
+.fa-edit:before {
+    content: "\f044"; }
+.fa-thumbs-down:before {
+    content: "\f165";
+}
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.eot");
+    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../webfonts/icomoon.eot?3vhx4w');
+    src: url('../webfonts/icomoon.eot?3vhx4w#iefix') format('embedded-opentype'), url('../webfonts/icomoon.ttf?3vhx4w') format('truetype'), url('../webfonts/icomoon.woff?3vhx4w') format('woff'), url('../webfonts/icomoon.svg?3vhx4w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.3vw;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rates:before {
+    content: "\e900";
+}
+
+.icon-payment:before {
+    content: "\e901";
+}
+
+.icon-investment:before {
+    content: "\e902";
+}
+
+.icon-equity:before {
+    content: "\e903";
+}
+
+.icon-corp:before {
+    content: "\e904";
+}
+
+.icon-report:before {
+    content: "\e905";
+}

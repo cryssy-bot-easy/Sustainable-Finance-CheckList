@@ -1,0 +1,132 @@
+@import url("../css/all.css");
+
+
+.repwrap {
+    padding: 3vw 0vw 0vw 8vw !important;
+    background-color: white;
+    width: 90% !important;
+    height: 100vh !important;
+    margin-left: 5vw !important;
+    margin-right: 1vw !important;
+    clear: both;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 1px 0px 1rem rgba(0, 0, 0, .2);
+}
+
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2.7vw;
+    height: 2.7vw;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #59917f;
+    border-radius: 0 4px 0 2px;
+    transition: all 0.3s ease-out;
+}
+
+.go-arrow {
+    margin-top: 1px;
+    margin-right: -4px;
+    font-size: 1.5vw;
+    color: white;
+    font-family: courier, sans;
+}
+
+.card1 {
+    display: inline-block;
+    position: relative;
+    max-width: 23%;
+    width: 26%;
+    height: 12vw;
+    background-color: rgba(242, 248, 249, .5);
+    border-radius: 1px;
+    padding: 4vw 24px;
+    margin: 3%;
+    text-decoration: none !important;
+    border: .5px solid rgba(23, 37, 42, 0.2) !important;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 1px 0px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #59917f;
+    height: 32px;
+    width: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+
+.card1:hover:before {
+    transform: scale(21);
+}
+
+.card1:hover>p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-10px);
+}
+
+.card1:hover {
+    box-shadow: 1px 0px 1rem rgba(0, 0, 0, .1);
+}
+
+.card1:hover>.title {
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+}
+
+.card1:active>.title,
+.card1:active>.go-corner {
+    transition: all 0.3s ease-out;
+    transform: translateX(-10px);
+}
+.title{
+    color: rgba(34, 34, 34, 0.8);
+    font-size: 1vw;
+    font-weight: bold;
+}
+.currpg {
+    display: inline-block;
+    color: rgb(80, 175, 150);
+    font-size: 1.5vw;
+}
+
+.currlink {
+    color: gray;
+    font-size: 1.3vw;
+    display: inline-block;
+}
+
+.currwrap {
+    margin-left: 39vw;
+    margin-bottom: 3vw;
+}
+#logoutButt{
+    color: gray;
+    font-size: 1.1vw;
+    padding: 4px 0px;
+    text-decoration: none;
+    background-color: white;
+    border: none;
+    min-width: 100%;
+    border-bottom-left-radius:  0.3vw;
+    border-bottom-right-radius:  0.3vw;
+}
+#logoutButt:hover{
+    background-color: rgba(192, 222, 217, 0.2);
+    color: black;
+    text-decoration: none !important;
+}

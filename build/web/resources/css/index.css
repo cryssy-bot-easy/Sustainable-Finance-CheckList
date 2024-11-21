@@ -1,0 +1,501 @@
+/*@import url("../css/fontawesome-all.css");*/
+html {
+    overflow: hidden;
+}
+
+body {
+
+}
+
+#lbp-wrap {
+    width: 35vw;
+    height: 12vw;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 10%;
+    padding-top: 2.8%;
+    padding-right: 3%;
+    white-space: nowrap;
+    
+}
+#animatedBorder
+{   position: relative;
+     margin-left: 119%;
+    height:12vw;
+    width:1px;
+    margin-top: -5%;
+    background-color:#ebeff0;
+    animation:grow 2s forwards;
+}
+
+@keyframes grow
+{
+    0% {
+        height: 0px;
+        top:0;
+    }
+    100%{
+        height: 200px;
+        top:-100px;
+    }
+
+}
+
+.header {
+    color: #ebeff0;
+    font-size: 1.7vw;
+    display: inline-block;
+    position: absolute;
+    letter-spacing: .1vw;
+    margin-left: 20%;
+}
+
+.systemTitle {
+    color: #ebeff0;
+    font-size: 1.3vw;
+    display: inline-block;
+    position: absolute;
+    letter-spacing: .25vw;
+    margin-top: 3.8vw;
+    margin-left: 2%;
+}
+
+.lbplogo {
+    width: 6vw;
+    margin-top: .5vw;
+    margin-left: 1vw;
+    color: #ebeff0;
+}
+
+#loginwrap {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+    padding: 0vw 1vw 1vw 5.5vw !important;
+    width: 35vw;
+}
+
+.usericon {
+    width: 4vw;
+    border: 1px solid white;
+    border-radius: 7vw;
+    padding: .5vw;
+    display: inline-block;
+    margin-left: 24.8%;
+    margin-bottom: 4%;
+}
+
+.uname-wrapper {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1vw;
+    color: rgba(23, 37, 42, 1);
+    margin-bottom: 1.3vw;
+}
+
+.uname-wrapper input {
+    border: none;
+    background: rgba(240, 240, 240, .9);
+    border-radius: .2vw;
+    height: 1.9vw;
+    width: 20vw;
+    padding-left: 2.9vw;
+    line-height: normal;
+}
+
+.uname-wrapper .fa-user {
+    color: rgba(23, 37, 42, .6) !important;
+    border-right: 1px solid rgba(23, 37, 42, .6);
+    top: .5vw;
+    left: .5vw;
+    position: absolute;
+    padding-right: .5vw;
+}
+
+.pw-wrapper {
+    position: relative;
+    display: inline-block;
+    font-size: 1.1vw;
+    color: rgba(23, 37, 42, 1);
+    margin-bottom: 1.3vw;
+}
+
+.pw-wrapper input {
+    border: none;
+    background: rgba(240, 240, 240, .9);
+    border-radius: .2vw;
+    height: 1.9vw;
+    width: 20vw;
+    padding-left: 2.9vw;
+    line-height: normal;
+}
+
+.pw-wrapper .fa-lock {
+    color: rgba(23, 37, 42, .6) !important;
+    border-right: 1px solid rgba(23, 37, 42, .6);
+    top: .5vw;
+    left: .5vw;
+    position: absolute;
+    padding-right: .5vw;
+}
+
+.pw-wrapper .fa-eye {
+    color: rgba(23, 37, 42, .6) !important;
+    top: .5vw;
+    right: .5vw;
+    position: absolute;
+}
+
+.pw-wrapper .fa-eye:active,
+.pw-wrapper .fa-eye:hover {
+    cursor: pointer;
+}
+
+.pw-wrapper:before {
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: inherit;
+    color: rgba(23, 37, 42, .6);
+    margin-left: .8vw !important;
+    border-right: 1px solid rgba(23, 37, 42, .6);
+    font-size: 1.1vw;
+    position: fixed;
+    margin-top: 7px;
+    padding-right: .5vw;
+}
+
+::placeholder {
+    font-size: 1.1vw;
+}
+
+@media screen and (max-width: 680px) {
+    ::placeholder {
+        color: transparent;
+    }
+}
+
+#loginButt {
+    font-size: 1.1vw;
+    color: rgba(240, 240, 240, .9);
+    margin-top: 1vw;
+    margin-left: 6.7vw;
+    position: relative;
+    width: 10vw;
+    height: 2vw;
+    border: none;
+    border-radius: .5vw;
+    outline: none;
+    background-image: linear-gradient( to left, rgb(70, 163, 129), rgb(91, 212, 168));
+    z-index: 1;
+    cursor: pointer;
+}
+
+#loginButt:hover {
+    background-image: linear-gradient( to right, #1e90ff, #00fa9a);
+    transition: opacity 0.5s linear;
+    outline: none;
+}
+
+#loginButt:active {
+    position: relative;
+    top: 2px;  
+}
+
+input,
+input:focus {
+    outline: none;
+}
+
+/* Change Autocomplete styles in Chrome*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: none;
+    font-size: 1.1vw;
+    -webkit-text-fill-color: rgba(23, 37, 42, 1);
+    -webkit-box-shadow: 0;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Tooltip style */
+
+.customtooltip {
+    visibility: hidden;
+    width: 15vw;
+    background-color: #f7cec2;
+    color: #c0534e;
+    border-radius: 4px;
+    border: .5px solid #cc776a;
+    padding: 4px 4px 4px 8px;
+    font-size: 1vw;
+    position: absolute;
+    z-index: 999;
+    left: .1%;
+    opacity: 0;
+    transition: .3s linear all;
+}
+
+#unametooltip {
+    top: 3vw;
+}
+
+#pwtooltip {
+    top: 2.9vw;
+}
+
+.customtooltip::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 9%;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 10.5px solid transparent;
+    border-bottom-color: #cc776a;
+}
+
+.customtooltip::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    bottom: 99%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-bottom-color: #f7cec2;
+}
+
+.customtooltip.showTooltip {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s linear all;
+}
+.fa {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1; }
+.fa-user:before {
+    content: "\f007"; }
+.fa-lock:before {
+    content: "\f023"; }
+.fa-eye:before {
+    content: "\f06e"; }
+.fa-eye-slash:before{
+    content: "\f070"; }
+.fa-exclamation-circle:before {
+    content: "\f06a"; }
+.fa{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; }
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.eot");
+    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); 
+}
+.alert {
+    position: relative;
+    display: inline-block;
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 23rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.alert-heading {
+    color: inherit
+}
+
+.alert-link {
+    font-weight: 700
+}
+
+.alert-dismissible {
+    padding-right: 4rem
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .3rem 1.25rem;
+    color: inherit
+}
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff
+}
+
+.alert-primary hr {
+    border-top-color: #9fcdff
+}
+
+.alert-primary .alert-link {
+    color: #002752
+}
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db
+}
+
+.alert-secondary hr {
+    border-top-color: #c8cbcf
+}
+
+.alert-secondary .alert-link {
+    color: #202326
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb
+}
+
+.alert-success hr {
+    border-top-color: #b1dfbb
+}
+
+.alert-success .alert-link {
+    color: #0b2e13
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb
+}
+
+.alert-info hr {
+    border-top-color: #abdde5
+}
+
+.alert-info .alert-link {
+    color: #062c33
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba
+}
+
+.alert-warning hr {
+    border-top-color: #ffe8a1
+}
+
+.alert-warning .alert-link {
+    color: #533f03
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    width: 40vw;
+    height: 2vw;
+
+}
+
+.alert-danger hr {
+    border-top-color: #f1b0b7
+}
+
+.alert-danger .alert-link {
+    color: #491217
+}
+
+.alert-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe
+}
+
+.alert-light hr {
+    border-top-color: #ececf6
+}
+
+.alert-light .alert-link {
+    color: #686868
+}
+
+.alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca
+}
+
+.alert-dark hr {
+    border-top-color: #b9bbbe
+}
+
+.alert-dark .alert-link {
+    color: #040505
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    opacity: .75
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+a.close.disabled {
+    pointer-events: none
+}
+.fade {
+    transition: opacity .15s linear
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .fade {
+        transition: none
+    }
+}
+
+.fade:not(.show) {
+    opacity: 0
+}
