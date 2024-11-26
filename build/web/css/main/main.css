@@ -668,3 +668,25 @@ fieldset {
     width: 400px;
     margin: 2.5rem auto;
 }
+
+
+/*.ui-state-active, 
+.ui-widget-content, 
+.ui-state-active, 
+.ui-widget-header, 
+.ui-state-active, 
+a.ui-button:active, 
+.ui-button:active, 
+.ui-button,
+.ui-state-active:hover{
+    background-color: rgb(13, 177, 75) !important;
+}*/
+
+.ui-accordion-header{
+/*    background-color: rgb(13, 177, 75) !important;*/
+ background-color: rgb(13, 177, 75) !important;
+}
+
+.moduleHeader{
+    background-color: rgb(13, 177, 75);
+}

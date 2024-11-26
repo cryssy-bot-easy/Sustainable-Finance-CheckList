@@ -116,7 +116,7 @@
                 <div id="maindiv">
                     <table style="width:100%">
                         <tr >
-                            <td width="50%" bgcolor="#0db14c"><h4 class="manager">&nbsp;Create Sustainability Finance Checklist - Lending</h4></td>
+                            <td width="50%" class="moduleHeader"><h4 class="manager">&nbsp;Create Sustainability Finance Checklist - Lending</h4></td>
                         </tr>
                         <tr>               
                             <td>    

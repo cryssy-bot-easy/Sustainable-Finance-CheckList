@@ -50,7 +50,7 @@
 
         <link href="${pageContext.request.contextPath}/css/main/home.css" rel="stylesheet" type="text/css"/>
         <link href="${pageContext.request.contextPath}/css/main/main.css" rel="stylesheet" type="text/css"/>
-        <title>User Maintenance Page</title>
+        <title>User Maintenance</title>
     </head>
     <body>
         
@@ -122,8 +122,8 @@
                 <br>                
                 <table style="width:100%">
                     <tr>
-                        <td width="50%" align="left"><h4>User Maintenance</h4></td>
-                        <td width="50%" align="right"><input class='block' type="submit" id="saveuser" name="saveuser" value="Add User"/>
+                        <td width="50%" class="moduleHeader" align="left"><h4>User Maintenance</h4></td>
+                        <td width="50%" class="moduleHeader" align="right"><input class='block' type="submit" id="saveuser" name="saveuser" value="Add User"/>
                             <input class='block' type="submit" id="updateuser" name="updateuser" value="Update User"/>
                             <input class='block' type="submit" id="liftuser" name="liftuser" value="Lift"/>
                             <input class='block' type="submit" id="resetuser" name="resetuser" value="Lift & Reset"/>
@@ -372,8 +372,8 @@
                 <br>                
                 <table style="width:100%">
                     <tr>
-                        <td width="50%" align="left"><h4>Department Maintenance</h4></td>
-                        <td width="50%" align="right"><input class='block' type="submit" id="savedept" name="savedept" value="Add Record"/>
+                        <td width="50%" class="moduleHeader" align="left"><h4>Department Maintenance</h4></td>
+                        <td width="50%" class="moduleHeader" align="right"><input class='block' type="submit" id="savedept" name="savedept" value="Add Record"/>
                             <input class='block' type="submit" id="updatedept" name="updatedept" value="Update Record"/>
                             <input class='block' type="submit" id="deletedept" name="deletedept" value="Delete Record"/>
                             <input class='block' type="submit" id="cleardept" name="cleardept" value="Clear Fields"/></td>                        
@@ -436,8 +436,8 @@
                 <br>                
                 <table style="width:100%">
                     <tr>
-                        <td width="50%" align="left"><h4>User Role Maintenance</h4></td>
-                        <td width="50%" align="right"><input class='block' type="submit" id="saveuserrole" name="saveuserrole" value="Add Record"/>
+                        <td width="50%" class="moduleHeader" align="left"><h4>User Role Maintenance</h4></td>
+                        <td width="50%" class="moduleHeader" align="right"><input class='block' type="submit" id="saveuserrole" name="saveuserrole" value="Add Record"/>
                             <input class='block' type="submit" id="updateuserrole" name="updateuserrole" value="Update Record"/>
                             <input class='block' type="submit" id="deleteuserrole" name="deleteuserrole" value="Delete Record"/>
                             <input class='block' type="submit" id="clearuserrole" name="clearuserrole" value="Clear Fields"/></td>                        

@@ -12,6 +12,10 @@
         <servlet-class>gov.landbank.SFC.controllers.LoadOnStartUp</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+    
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
      
 
 </web-app>
