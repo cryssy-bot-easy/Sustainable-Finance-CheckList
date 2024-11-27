@@ -1,0 +1,126 @@
+.modal-header {
+    padding: 8px;
+    background-color: #00aeef;
+}
+
+.modal-header.success {
+    background-color: #28a745;
+}
+
+.modal-header.warning {
+    background-color: #ffc107;
+}
+
+.modal-header.danger {
+    background-color: #dc3545;
+}
+
+.modal-header button {
+    outline: none;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    color: #fff;
+    margin: -14px;
+}
+
+h5.modal-title {
+    color: #fff;
+    font-weight: bold;
+}
+
+.expired-modal-message {
+    width: 185px;
+}
+
+.modal-notification {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.modal-body hr {
+    background-color: #00aeef;
+}
+
+.modal > .modal-dialog > .modal-content > .modal-footer {
+    border-top: 1px solid #00aeef;
+}
+
+.modal-header.danger + .modal-body + .modal-footer {
+    border-top: 1px solid #dc3545;
+}
+
+.modal-notification.danger {
+    background-color: #dc3545;
+}
+
+.modal-notification.success {
+    background-color: #28a745;
+}
+
+.modal-notification.warning {
+    background-color: #ffc107;
+}
+
+.modal-notification.info {
+    background-color: #17a2b8;
+}
+
+#confirmModal .modal-body {
+    text-align: center;
+}
+
+.modal-dialog.centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+@media (min-width: 576px) {
+    .modal-dialog.centered {
+        min-height: calc(100% - 6rem);
+    }
+}
+
+
+.pdfImage {
+    grid-area: header;
+    background-image: url("../../images/modal/pdf-icon.png");
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position-x: 37px;
+    background-position-y: center;
+    border-bottom: 1px solid #0DB14B;
+    box-shadow: 0 4px 2px -2px #666666;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.wordImage {
+    grid-area: header;
+    background-image: url("../../images/modal/msword-icon.png");
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position-x: 37px;
+    background-position-y: center;
+    border-bottom: 1px solid #0DB14B;
+    box-shadow: 0 4px 2px -2px #666666;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.excelImage {
+    grid-area: header;
+    background-image: url("../../images/modal/xls-icon.png");
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position-x: 37px;
+    background-position-y: center;
+    border-bottom: 1px solid #0DB14B;
+    box-shadow: 0 4px 2px -2px #666666;
+    background-color: #fff;
+    z-index: 2;
+}

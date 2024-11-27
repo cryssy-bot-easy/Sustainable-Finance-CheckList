@@ -1,0 +1,24 @@
+#report-format-content img.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#report-format-content .modal-dialog {
+    max-width: 350px;
+    margin: 1.75rem auto;
+    cursor: pointer;
+}
+
+#report-format-content .hide {
+    display: none;
+}
+
+#report-format-content #reportFormatPdf,
+#report-format-content #reportFormatExcel,
+#report-format-content #reportFormatWord {
+    text-align: center;
+    color: #454545;
+}
+
+
+
