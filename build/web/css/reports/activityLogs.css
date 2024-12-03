@@ -1,0 +1,9 @@
+#activityLogReports .activityLogReportTop {
+    padding-bottom: 80px;
+}
+#activityLogReports #generateActivityReport {
+    margin-bottom: 10px;
+}
+#activityLogReports .activityLogReportTopFieldSet {
+    margin-bottom: 10px;
+}

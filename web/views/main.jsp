@@ -85,24 +85,52 @@
                </div>
                 <ul id="filtered-menu-tree" class="menu-tree toggle-hide"></ul>
                 <ul id="menu-tree" class="menu-tree">
-                            <li class="tree-item no-sub-item">
-                                <span class="fa fa-spinner fa-pulse"></span>
+                            <li class="tree-item">
+                                <span class="fa fa-chevron-right"></span>
                                     <a aria-current="page" class="app-item-name active" href="${pageContext.request.contextPath}/welcome"><span>Home</span></a>
                             </li>
                             <li class="tree-item">
-                                <span class="fa fa-spinner fa-pulse"></span>
-                                <span class="app-item-name">User Maintenance</span>
-                            </li>
+                                <span class="fa fa-chevron-right"></span>
+                                <span data-page="userMaintenance" class="app-item-name menu-link">User Maintenance</span>
+                            </li>  
+                         
                             <li class="tree-item">
-                                <span class="fa fa-spinner fa-pulse"></span>
+                                <span class="fa fa-chevron-right"></span>
                                 <span id="roleMaintenance" data-page="roleMaintenance" class="app-item-name menu-link">Role Maintenance</span>
                                 
                             </li>
-                              <li class="tree-item">
-                                <span class="fa fa-spinner fa-pulse"></span>
-                                <span id="lending" data-page="lending" class="app-item-name menu-link">Lending</span>
+                            <li class="tree-item">
+                                <span class="fa fa-chevron-right"></span>
+                                <span id="lending" data-page="lending" class="app-item-name menu-link">E&S Sustainable Finance and Compliance Assessment</span>
                                 
                             </li>
+<!--                            <li class="tree-item">
+                                <span class="fa fa-chevron-right"></span>
+                                <span id="lending" data-page="lending" class="app-item-name menu-link">Sustainable Finance Checklist</span>
+                                
+                            </li>-->
+                            <li class="tree-item">
+                                <span class="fa fa-chevron-down"></span>
+                                <span id="reports" class="app-item-name">Reports</span>
+                                <li class="tree-item menu-sub-tree">
+                                    <span class="fa fa-chevron-right"></span>
+                                    <span id="listUsers" data-page="reports/listUsers" class="app-item-name menu-link">List of Users</span>
+                                </li>
+                                <li class="tree-item menu-sub-tree">
+                                    <span class="fa fa-chevron-right"></span>
+                                    <span id="activityLogs" data-page="reports/activityLogs" class="app-item-name menu-link">Activity Logs</span>
+                                </li> 
+                                <li class=" tree-item menu-sub-tree">
+                                    <span class="fa fa-chevron-right"></span>
+                                    <span id="reports/checkList" data-page="reports/checkList" class="app-item-name menu-link">E&S Sustainable Finance Checklist</span>
+                                </li>
+                                <li class=" tree-item menu-sub-tree">
+                                    <span class="fa fa-chevron-right"></span>
+                                    <span id="reports/complianceAssessment" data-page="reports/complianceAssessment" class="app-item-name menu-link">E&S Sustainable Finance and Compliance Assessment</span>
+                                </li>
+                          
+                               
+                    </ul>
 <!--                            <li class="tree-item">
                                 <span class="fa fa-spinner fa-pulse"></span>
                                 <span class="app-item-name">E&S Sustainable Finance and Compliance Assessment</span>
@@ -134,7 +162,7 @@
                             
             </div>
         </div>
-        <div class='main' overflow:auto>     
+        <div class='main'>     
             <div class="app-container">
                 <div id="homePageGreetingContainer">
                     <div class="contents">

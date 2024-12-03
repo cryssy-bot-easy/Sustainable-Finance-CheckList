@@ -29,16 +29,19 @@
         
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
+    </head> 
     <body>
     
 <!--        <div class='main' overflow:auto>     -->
-         <div id="DIVSFCTABS">
-                <div id="maindiv">
+         <div id="DIVSFCTABS" class="ui-tabs ui-corner-all ui-widget ui-widget">
+             
+                <h3 class="module-title" align="left">Create Sustainability Finance Checklist - Lending</h3>
+                <fieldset>
+                <div>
                     <table style="width:100%">
-                        <tr >
+<!--                        <tr >
                             <td width="50%" class="moduleHeader"><h4 class="manager">&nbsp;Create Sustainability Finance Checklist - Lending</h4></td>
-                        </tr>
+                        </tr>-->
                         <tr>               
                             <td>    
                                 <label>&nbsp;Is this a Lending or an Investment?*</label>
@@ -1483,7 +1486,7 @@
                 <div id="tabs-7">
 
                 </div>     
-        
+            </fieldset>
             </div>
 
     </body>

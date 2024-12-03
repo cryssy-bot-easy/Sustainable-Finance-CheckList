@@ -10,12 +10,12 @@ and open the template in the editor.
 
 #homePageGreetingContainer {
     margin: 22px 10px 0 0;
-    color: #fff;
+    /*color: #fff;*/
     min-width: 983px;
 }
 
 #homePageGreetingContainer a {
-    color: #fff;
+    /*color: #fff;*/
     font-weight: bold;
     text-decoration: underline;
 }
@@ -25,7 +25,7 @@ and open the template in the editor.
 }
 
 #homePageGreetingContainer .contents {
-    background-color: #666666;
+    /*background-color: #666666;*/
     border-radius: 10px 10px 10px 10px;
     padding: 1rem;
     min-height: 300px;

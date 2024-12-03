@@ -61,6 +61,8 @@ $(document).ready(function () {
 
         });
         
+         fillusertable();
+        
         $("#deactivateuser").on('click', function () {
             var uname = $("#uname").val();
             var status = $("#userrole").val() === "Active" ? "A" : "I";

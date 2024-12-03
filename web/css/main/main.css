@@ -41,7 +41,7 @@ a:-webkit-any-link {
 }
 
 a {
-    color: #0DB14B;
+    color: #ffffff;
 }
 
 .toggle-hide {
@@ -687,6 +687,11 @@ a.ui-button:active,
  background-color: rgb(13, 177, 75) !important;
 }
 
-.moduleHeader{
+/*.moduleHeader{
     background-color: rgb(13, 177, 75);
+}*/
+
+h3.module-title {
+    color: #0DB14B;
+    margin-bottom: 20px;
 }

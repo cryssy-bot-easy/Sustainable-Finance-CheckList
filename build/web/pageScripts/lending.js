@@ -9,11 +9,11 @@ var warningTimerID, timeoutTimerID;
 
 $(document).ready(function () {
     
-    $('.menu-link').click(function (e) {
-//            e.preventDefault(); // Prevent default link behavior
-            var page = $(this).data('page');
-            $('#main-content').load('views/' + page + '.jsp');
-    });
+//    $('.menu-link').click(function (e) {
+////            e.preventDefault(); // Prevent default link behavior
+//            var page = $(this).data('page');
+//            $('#main-content').load('views/' + page + '.jsp');
+//    });
    
     $("#DIVSFCTABS").tabs();
         $("#accordion").accordion();

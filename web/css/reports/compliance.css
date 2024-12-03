@@ -1,0 +1,9 @@
+#complianceReports .complianceReportTop {
+    padding-bottom: 80px;
+}
+#complianceReports #generateComplianceReport {
+    margin-bottom: 10px;
+}
+#complianceReports .complianceReportTopFieldSet {
+    margin-bottom: 10px;
+}

@@ -55,9 +55,9 @@
             </div> 
             
 
-            <div id="DIVUSERROLEVIEW">
-                <br>                
-                <table style="width:100%">
+            <div>
+<!--                <br>                -->
+<!--                <table style="width:100%">
                     <tr>
                         <td width="50%" class="moduleHeader" align="left"><h4>User Role Maintenance</h4></td>
                         <td width="50%" class="moduleHeader" align="right"><input class='block' type="submit" id="saveuserrole" name="saveuserrole" value="Add Record"/>
@@ -65,8 +65,10 @@
                             <input class='block' type="submit" id="deleteuserrole" name="deleteuserrole" value="Delete Record"/>
                             <input class='block' type="submit" id="clearuserrole" name="clearuserrole" value="Clear Fields"/></td>                        
                     </tr>
-                </table>    
-                <hr>                
+                </table>    -->
+
+                <h3 class="module-title" align="left">Role Maintenance</h3>
+                <fieldset>
                 <table style="width:100%"> 
                     <tr>
                         <td width="15%"><label>User Role</label></td>
@@ -76,9 +78,11 @@
                         <td width="48%"></td>       
                     </tr>   
                     <tr height = 10px></tr>
-                </table>                
-                <hr>
-
+                </table>   
+             
+               
+                </fieldset>
+                 <hr>
                 <table style="width:100%">                     
                     <tr>
                         <td width="25%">
