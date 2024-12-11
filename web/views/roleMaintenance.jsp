@@ -106,16 +106,18 @@
 
                 <div class='well' style="height:330px;overflow-y:auto;overflow-x:auto;"  >
 
-                    <table  class="table table-bordered table-striped" style="white-space:nowrap;" id="userroletable" >
+                    <table  class="table table-bordered table-striped" style="white-space:nowrap;" id="roletable" >
                         <!--table table-bordered table-striped--> 
 
                         <thead style='tr:first-child th { position: sticky; top: 0; }'>
                             <tr>
-                                <th>Record ID</th>                                            
-                                <th onclick="sortTable(1)"><a href="#" class="sort-by">User Role</a></th>                                                                
+                                <th>Record ID</th>             
+                                <th>User Role</th>   
+                                 <!--<th onclick="sortTable(1)">-->
+                                <!--<a class="sort-by">User Role</a></th>-->                                                                
                             </tr>
                         </thead>
-                        <tbody id="userroletable" style='height:50px;display:block;overflow:scroll;'>
+                        <tbody id="roletable" style='height:50px;display:block;overflow:scroll;'>
 
                         </tbody>         
                     </table>
@@ -126,6 +128,6 @@
             <!--</div>-->      
 
     </body>
-    <script src="${pageContext.request.contextPath}/pageScripts/userMaintenance.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/pageScripts/roleMaintenance.js" type="text/javascript"></script>
 </html>
 

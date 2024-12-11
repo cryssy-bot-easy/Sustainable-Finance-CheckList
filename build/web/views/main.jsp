@@ -87,7 +87,7 @@
                 <ul id="menu-tree" class="menu-tree">
                             <li class="tree-item">
                                 <span class="fa fa-chevron-right"></span>
-                                    <a aria-current="page" class="app-item-name active" href="${pageContext.request.contextPath}/welcome"><span>Home</span></a>
+                                    <a aria-current="page" style="color: #fff;" class="app-item-name active" href="${pageContext.request.contextPath}/welcome"><span>Home</span></a>
                             </li>
                             <li class="tree-item">
                                 <span class="fa fa-chevron-right"></span>
@@ -168,15 +168,16 @@
                     <div class="contents">
 
                         <div id="main-content">
-                        <h1>"Hi! "
-                            <%= session_fullName%>
-                            ". Welcome to Sustainable Finance Checklist System!"</h1>
-                        <h4 class="mb-5">Sustainable Finance Checklist</h4>
-                            
+                            <div id="home-page">
+                                <div class="contents2">
+                                <h1>"Hi! "
+                                    <%= session_fullName%>
+                                    ". Welcome to Sustainable Finance Checklist System!"</h1>
+                                <h4 class="mb-5">Sustainable Finance Checklist</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-          
                 </div>
             </div>
         </div>        
